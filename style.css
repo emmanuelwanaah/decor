@@ -1,0 +1,338 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+/* header{
+    margin: 2rem ;
+    margin-top: 0;
+    margin-bottom: 0;
+} */
+.container{
+    display: flex;
+    gap: 5rem;
+    position: relative;
+    bottom: 40px;
+    /* z-index: 100; */
+}
+nav{
+display: flex;
+justify-content: flex-start;
+position: relative;
+margin-left: 20px;
+gap: 4rem;
+z-index: 1;
+top: 30px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+li{
+    list-style: none;
+    position: relative;
+    bottom: 7px;
+/* right: 800px;s */
+    
+
+}
+a{
+    text-decoration: none;
+    color:#fdfdfd;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+a::after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+}
+.active::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -10px;
+        left: 0;
+        background-color: #fff;
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+}
+a:hover::after{
+    width: 100%;
+    
+    
+}
+a:hover{
+    color: #fff;
+}
+.img{
+height: 450px;
+}
+.text{
+    display: grid;
+    gap: -10rem;
+    justify-content: center;
+   
+}
+.text h1{
+font-size: 2.5rem;
+font-weight: 700;
+line-height: 40px;
+margin-top: 3rem;
+}
+.textp{
+font-size: 13px;
+color: #adadad;
+white-space: nowrap;
+}
+.shop{
+    font-size: 15px;
+    text-transform: uppercase;
+   letter-spacing: 15px;
+   margin-bottom: 40px;
+}
+.logo{
+    height: 16px;
+    /* position: relative; */
+ /* top: 8px; */
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 40px;
+    gap: 2rem;
+}
+.second{
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.two{
+    font-size: 13px;
+    white-space: nowrap;
+    /* text-align: center; */
+}
+.contain img{
+    /* width: 387px; */
+    overflow: hidden;
+}
+.icons{
+  padding: 15px 45px;
+  position: relative;
+  left: 709px;
+  bottom: 350px;
+  cursor: pointer;
+ 
+    
+    background-color: #000;
+}
+.menu{
+    display: none;
+}
+.show{
+    display: none;
+}
+
+@media (max-width:1350px) {
+    .icons{
+        padding: 15px 55px;
+        position: relative;
+        left: 709px;
+        bottom: 345px;
+        cursor: pointer;
+       
+          
+          background-color: #000;
+      }
+    
+}
+
+@media (max-width:1200px) {
+    /* .icons{
+        padding: 15px 55px;
+        position: relative;
+        left: 709px;
+        bottom: 345px;
+        cursor: pointer;
+       
+          
+          background-color: #000;
+      }
+      .contain img{
+        
+        overflow:visible;
+    } */
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        place-items: center;
+        gap: 3rem;
+    }
+    .img{
+        height: 700px;
+        width: 1000px;
+        }
+        nav{
+            display: flex;
+            justify-content: flex-start;
+            position: relative;
+            margin-left: 20px;
+            gap: 4rem;
+            bottom: 0;
+            
+            }
+         
+            a{
+             
+               
+                font-size: 18px;
+                
+            }
+            .contain{
+                display: grid;
+                grid-template-columns: 1fr;
+                place-items: center;
+            }
+            .second{
+               
+                text-align:center;
+                
+            }
+            .textp{
+                font-size: 18px;
+                margin-top: 2rem;
+            }
+            .two{
+                font-size: 18px;
+            }
+            .shop{
+                margin-top: 2rem;
+            }
+           .contain img{
+            width: 600px;
+           }
+           .icons{
+            
+            left: 709px;
+            bottom: 1450px;
+           
+           
+           
+          }
+        }
+        @media (max-width:768px){
+            contain img{
+                width: auto;
+               }
+               .img{
+               /* content: url(images/mobile-image-hero-1.jpg); */
+               height: auto;
+               width: auto;
+                }
+                .text{
+                    margin-right: 8rem ;
+                }
+                .icons{
+            
+                    left: 260px;
+                 
+                    padding: 15px 30px;
+                   
+                   
+                  }
+                  .textp{
+                    font-size: 12px;
+                    margin-top: 2rem;
+                }
+                .two{
+                    font-size: 12px;
+                }
+                nav ul {
+                    display: none;
+                    flex-direction: row;
+                    position: absolute;
+                    top: 70px;
+                    left: -20px;
+                    width: 100%;
+                    height: 200px;
+                    background-color: white;
+                    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                  }
+                  .menu{
+                    display: block;
+                  }
+                  a{
+                    color: #000;
+                  }
+        }
+        @media (max-width:430px){
+          
+          .container img{
+            width: 510px;
+          }
+              .contain{
+                margin-left: 2rem;
+              }
+                .icons{
+            
+                    left: 200px;
+                 
+                    padding: 15px 30px;
+                   
+                   
+                  }
+                  .textp{
+                    font-size: 12px;
+                    margin-top: 2rem;
+                }
+                .two{
+                    font-size: 12px;
+                    font-weight: 500;
+                   
+                    word-wrap: break-word;
+                   
+                }
+                .show{
+                    display: block;
+                }
+                .dontshow{
+                    display: none;
+                }
+                .dark{
+                    width: 20px;
+                   }
+                   .light{
+                    width: 20px;
+                   }
+                   .text{
+                    left: 0;
+                    right: 0;
+                  
+                   }
+        }
